@@ -4,5 +4,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://gitUserNameAlex.github.io/
-dpo-mirea/)
+- [Публичная страница на GitHub Pages](https://gitUserNameAlex.github.io/dpo-mirea/)
