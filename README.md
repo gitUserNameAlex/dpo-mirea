@@ -35,7 +35,7 @@ DPO-MIREA/
 ├── src/
 │   └── styles/
 │       ├── normalize.css    # Нормализация стилей
-│       ├── resets.css       # Сброс стилей
+│       ├── resets.css       # Сброс дефолтных стилей
 │       ├── fonts.css        # Подключение шрифтов
 │       ├── colors.css       # CSS-переменные для цветов
 │       └── index.css        # Основные стили
