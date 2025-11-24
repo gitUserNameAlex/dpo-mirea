@@ -5,41 +5,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ДПО МИРЭА</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/resets.css">
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    <link rel="stylesheet" href="src/styles/colors.css">
+    <link rel="stylesheet" href="src/styles/index.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>МойСайт</h1>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__search">
+                <button class="header__search-button button_reset">
+                    <img src="assets/icons/searchIcon.png" alt="Поиск">
+                </button>
+            </div>
+            <div class="header__logo">
+                <img src="assets/img/logo.png" alt="Avion">
+            </div>
+            <div class="header__actions">
+                <button class="header__actions-cart button_reset">
+                    <img src="assets/icons/cartIcon.png" alt="Корзина">
+                </button>
+                <button class="header__actions-user button_reset">
+                    <img src="assets/icons/userIcon.png" alt="Пользователь">
+                </button>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section id="home">
-            <h2>Добро пожаловать!</h2>
-            <p>Это главная страница нашего веб-приложения.</p>
+
+    <main class="main">
+        <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Plan pots</a>
+                    </li>
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Ceramics</a>
+                    </li>
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Tables</a>
+                    </li>
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Chairs</a>
+                    </li>
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Crockery</a>
+                    </li>
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Tableware</a>
+                    </li>
+                    <li class="navigation__item li_reset">
+                        <a href="#" class="navigation__link link_reset">Cutlery</a>
+                    </li>
+                </ul>
+        </nav>
+
+        <section class="brand">
+            <div class="brand__content">
+                <h1 class="brand__title">The furniture brand for the future, with timeless designs</h1>
+                <button class="brand__button button_reset">View collection</button>
+                <p class="brand__description">A new era in eco friendly furniture with Avelon, the French luxury retail brand with nice fonts, tasteful colors and a beautiful way to display things digitally using modern web technologies.</p>
+            </div>
+            <div class="brand__image">
+                <img src="assets/img/brandChair.png" alt="Брендовый стул">
+            </div>
         </section>
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы компания, которая занимается созданием качественных веб-решений.</p>
+
+        <section class="diffs">
+            <h2 class="diffs__title">What makes our brand different</h2>
+            <div class="diffs__grid">
+                <div class="diffs__item">
+                    <img src="assets/icons/deliveryIcon.png" alt="Доставка" class="diffs__icon">
+                    <h3 class="diffs__item-title">Next day as&nbsp;standard</h3>
+                    <p class="diffs__item-description">Order before 3pm and get your order the next day as&nbsp;standard</p>
+                </div>
+                <div class="diffs__item">
+                    <img src="assets/icons/checkmarkIcon.png" alt="Качество" class="diffs__icon">
+                    <h3 class="diffs__item-title">Made by&nbsp;true artisans</h3>
+                    <p class="diffs__item-description">Handmade crafted goods made with real passion and craftmanship</p>
+                </div>
+                <div class="diffs__item">
+                    <img src="assets/icons/purchaseIcon.png" alt="Цены" class="diffs__icon">
+                    <h3 class="diffs__item-title">Unbeatable prices</h3>
+                    <p class="diffs__item-description">For our materials and quality you won't find better prices anywhere</p>
+                </div>
+                <div class="diffs__item">
+                    <img src="assets/icons/sproutIcon.png" alt="Упаковка" class="diffs__icon">
+                    <h3 class="diffs__item-title">Recycled packaging</h3>
+                    <p class="diffs__item-description">We use 100% recycled packaging to&nbsp;ensure our footprint is&nbsp;manageable</p>
+                </div>
+            </div>
         </section>
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Веб-разработка</li>
-                <li>Дизайн</li>
-                <li>Консультации</li>
-            </ul>
+
+        <section class="ceramics">
+            <h2 class="ceramics__title">New ceramics</h2>
+            <div class="ceramics__grid">
+                <div class="ceramics__item">
+                    <div class="ceramics__image">
+                        <img src="assets/img/brandChair.png" alt="Керамика">
+                    </div>
+                    <h3 class="ceramics__item-title">The Dandy chair</h3>
+                    <p class="ceramics__item-price">£250</p>
+                </div>
+                <div class="ceramics__item">
+                    <div class="ceramics__image">
+                        <img src="assets/img/oldChair.png" alt="Керамика">
+                    </div>
+                    <h3 class="ceramics__item-title">Rustic Vase Set</h3>
+                    <p class="ceramics__item-price">£155</p>
+                </div>
+                <div class="ceramics__item">
+                    <div class="ceramics__image">
+                        <img src="assets/img/skillyVase.png" alt="Керамика">
+                    </div>
+                    <h3 class="ceramics__item-title">The Silky Vase</h3>
+                    <p class="ceramics__item-price">£125</p>
+                </div>
+                <div class="ceramics__item">
+                    <div class="ceramics__image">
+                        <img src="assets/img/lucyLamp.png" alt="Керамика">
+                    </div>
+                    <h3 class="ceramics__item-title">The Lucy Lamp</h3>
+                    <p class="ceramics__item-price">£399</p>
+                </div>
+            </div>
+            <div class="ceramics__button-container">
+                <button class="ceramics__button button_reset">View collection</button>
+            </div>
+        </section>
+
+        <section class="popular">
+            <h2 class="popular__title">Our popular products</h2>
+            <div class="popular__grid">
+                <div class="popular__item popular__item--large">
+                    <div class="popular__image">
+                        <img src="assets/img/suedeSofa.png" alt="Диван">
+                    </div>
+                    <h3 class="popular__item-title">The Poplar suede sofa</h3>
+                    <p class="popular__item-price">£980</p>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__image">
+                        <img src="assets/img/brandChair.png" alt="Стул">
+                    </div>
+                    <h3 class="popular__item-title">The Dandy chair</h3>
+                    <p class="popular__item-price">£250</p>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__image">
+                        <img src="assets/img/oldChair.png" alt="Стул">
+                    </div>
+                    <h3 class="popular__item-title">The Dandy chair</h3>
+                    <p class="popular__item-price">£250</p>
+                </div>
+            </div>
+            <div class="popular__button-container">
+                <button class="popular__button button_reset">View collection</button>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefits__container">
+                <h2 class="benefits__title">Join the club and get the&nbsp;benefits</h2>
+                <p class="benefits__description">Sign up for our newsletter and receive exclusive offers on&nbsp;new ranges, sales, pop up&nbsp;stores and more</p>
+                <form class="benefits__form">
+                    <input 
+                        type="email" 
+                        class="benefits__input input_reset" 
+                        placeholder="your@email.com"
+                        required
+                    >
+                    <button type="submit" class="benefits__button button_reset">Sign up</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="summary">
+            <div class="summary__content">
+                <h2 class="summary__title">From a&nbsp;studio in&nbsp;London to&nbsp;a&nbsp;global brand with over 400&nbsp;outlets</h2>
+                <p class="summary__description">When we&nbsp;started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
+                <p class="summary__description">Handmade, and lovingly crafted furniture and homeware is&nbsp;what we&nbsp;live, breathe and design so&nbsp;our Chelsea boutique become the hotbed for the London interior design community.</p>
+                <button class="summary__button button_reset">Get in&nbsp;touch</button>
+            </div>
+            <div class="summary__image">
+                <img src="assets/img/summaryChair.png" alt="Интерьер с растениями">
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 МойСайт</p>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h4 class="footer__title">Menu</h4>
+                    <ul class="footer__list ul_reset">
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">New arrivals</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Best sellers</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Recently viewed</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Popular this week</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">All products</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Categories</h4>
+                    <ul class="footer__list ul_reset">
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Crockery</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Furniture</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Homeware</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Plant pots</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Chairs</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Crockery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Our company</h4>
+                    <ul class="footer__list ul_reset">
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">About us</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Vacancies</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Contact us</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Privacy</a>
+                        </li>
+                        <li class="footer__item li_reset">
+                            <a href="#" class="footer__link link_reset">Returns policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column footer__column--newsletter">
+                    <h4 class="footer__title">Join our mailing list</h4>
+                    <form class="footer__form">
+                        <input 
+                            class="footer__input input_reset"
+                            type="email" 
+                            placeholder="your@email.com"
+                        >
+                        <button type="submit" class="footer__button button_reset">Sign up</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">Copyright 2022 Avion&nbsp;LTD</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <img src="assets/icons/linkedinIcon.png" alt="LinkedIn">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <img src="assets/icons/instagramIcon.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <img src="assets/icons/facebookIcon.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Skype">
+                        <img src="assets/icons/skypeIcon.png" alt="Skype">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                        <img src="assets/icons/twitterIcon.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">
+                        <img src="assets/icons/pinterestIcon.png" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

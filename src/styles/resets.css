@@ -1,0 +1,47 @@
+.button_reset {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+}
+
+.ul_reset {
+    margin: 0;
+    padding: 0;
+}
+
+.li_reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link_reset {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.input_reset {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
